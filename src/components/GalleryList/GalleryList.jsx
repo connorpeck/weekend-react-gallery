@@ -6,8 +6,8 @@ function GalleryList( props ){
     return (
         <div>
             <h2>GalleryList</h2>
-            <p>Props: { JSON.stringify( props ) }</p>
-            <GalleryItem />
+            {props.imageArray.map(galleryItems =>  (<GalleryItem  galleryItems = {galleryItems}/>))}
+            
         </div>
     );
 }
