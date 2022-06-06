@@ -4,9 +4,9 @@ import GalleryItem from '../GalleryItem/GalleryItem';
 function GalleryList( props ){
     const [ hook, setHook ] = useState( null )
     return (
-        <div>
-            <h2>GalleryList</h2>
-            {props.imageArray.map(galleryItems =>  (<GalleryItem  galleryItems = {galleryItems}/>))}
+        <div className='gallery'>
+            
+            {props.imageArray.map(image =>  (<GalleryItem  galleryItem = {image}/>))}
             
         </div>
     );

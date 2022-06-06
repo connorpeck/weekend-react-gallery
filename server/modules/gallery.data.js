@@ -3,13 +3,13 @@ const galleryItems = [
     title: 'Myself',
     description: 'Photo of myself taken near lake Superior.', 
     likes: 0 },
-    { id: 1, path: 'images/myself.jpg', 
-    title: 'Myself',
-    description: 'Photo of myself taken near lake Superior.', 
+    { id: 2, path: 'images/', 
+    title: 'My cute dog',
+    description: 'Photo of Benji!.', 
     likes: 0 },
-    { id: 1, path: 'images/myself.jpg', 
-    title: 'Myself',
-    description: 'Photo of myself taken near lake Superior.', 
+    { id: 3, path: 'images/', 
+    title: 'Hal',
+    description: 'Wow!.', 
     likes: 0 }
 ];
 
