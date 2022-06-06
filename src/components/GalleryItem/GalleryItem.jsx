@@ -1,8 +1,10 @@
-import { useState } from 'react';
+import { useState} from 'react';
 import axios from 'axios';
 
 function GalleryItem( props ){
     const [ show, setShow ] = useState( true );
+
+
 
 
     const toggleShow = () => {
@@ -16,7 +18,7 @@ function GalleryItem( props ){
         }).catch( ( err )=>{
             console.log(err);
             alert ('error putting items');
-        }),
+        });
         console.log(props.galleryItem.likes);
       }
     return (
@@ -31,7 +33,7 @@ function GalleryItem( props ){
 
             } 
         </div>
-        <button id={props.galleryItem.id} onClick={likeGalleryItem}>like</button>
+        <button id={props.galleryItem.id} onClick={likeGalleryItem}>Like</button>
         <p>likes: {props.galleryItem.likes}</p>
         </div>
     );
