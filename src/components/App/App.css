@@ -16,13 +16,13 @@
 .galleryItem img{
   height: 300px;
   width: 300px;
-  /* display: inline; */
+  display: inline;
 }
 
 .galleryItem {
   height: 300px;
   width: 300px;
-  /* display: flex; */
+  display: flex;
   justify-content: center;
   align-items: center;
   
@@ -30,10 +30,11 @@
 
 .gallery {
   display: grid;
-    grid-template-columns: 2vw repeat(3, 1fr) 2vw;
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 2px;
-    
+  grid-template-columns:  repeat(3, 1fr) ;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 12px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
   
 
