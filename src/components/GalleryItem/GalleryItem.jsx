@@ -4,16 +4,20 @@ import axios from 'axios';
 function GalleryItem( props ){
     const [ show, setShow ] = useState( true );
 
+
     const toggleShow = () => {
         setShow (!show);
     } // end toggleShow
 
     const likeGalleryItem = () => {
-        // console.log(props.galleryItem.id);
-        axios.put(('./gallery/like/:id'), 
-        {id: props.galleryItem.id}).then((response) => {
+        let likedItem = props.galleryItem.id;
+        axios.put('/gallery/like/'+likedItem).then( (response)=>{
             console.log(response.data);
-          });
+        }).catch( ( err )=>{
+            console.log(err);
+            alert ('error putting items');
+        }),
+        console.log(props.galleryItem.likes);
       }
     return (
         <div>
@@ -26,11 +30,6 @@ function GalleryItem( props ){
             <h2>{props.galleryItem.description}</h2>
 
             } 
-
-
-
-            
-            
         </div>
         <button id={props.galleryItem.id} onClick={likeGalleryItem}>like</button>
         <p>likes: {props.galleryItem.likes}</p>
