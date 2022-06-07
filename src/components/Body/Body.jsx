@@ -19,17 +19,11 @@ function Body( props ){
             console.log(err);
             alert ('error getting items');
         })
-        
-        // setImages( [ {
-        //     id: 1, path: 'testtesttest', 
-        //     description: 'testetst8923horakfhsdn.jkas.', 
-        //     likes: 44 
-        // }])
-    }
+    } // end get Gallery
     return (
         <div>
             {/* <p>Props: { JSON.stringify( props ) }</p> */}
-            < GalleryList imageArray={ images }/>
+            < GalleryList imageArray={ images } getGallery={getGallery}/>
         </div>
     );
 }

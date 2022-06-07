@@ -22,7 +22,19 @@ const galleryItems = [
     { id: 6, path: 'images/art.jpg', 
     title: 'art',
     description: 'My favorite piece of art that I have made', 
-    likes: 0 }
+    likes: 0 },
+    { id: 7, path: 'images/iceland.jpg', 
+    title: 'iceland',
+    description: 'Horses in Iceland', 
+    likes: 0 },
+    { id: 8, path: 'images/coffee.jpg', 
+    title: 'coffee',
+    description: 'Latte art for my day job!', 
+    likes: 0 },
+    { id: 8, path: 'images/eclipse.jpg', 
+    title: 'eclipse',
+    description: 'Total solar eclipse in Wyoming!', 
+    likes: 0 },
 ];
 
 module.exports = galleryItems;

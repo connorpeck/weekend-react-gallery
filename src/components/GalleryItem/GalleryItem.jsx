@@ -11,26 +11,27 @@ function GalleryItem( props ){
         setShow (!show);
     } // end toggleShow
 
+    
+
     const likeGalleryItem = () => {
         let likedItem = props.galleryItem.id;
         axios.put('/gallery/like/'+likedItem).then( (response)=>{
-            console.log(response.data);
+            console.log('response.data',response.data);
+           props.getGallery();
         }).catch( ( err )=>{
             console.log(err);
             alert ('error putting items');
         });
-        console.log(props.galleryItem.likes);
       }
+      
     return (
         <div>
         <div onClick={toggleShow} className="galleryItem">
             {
             show?
             <img  src={props.galleryItem.path}/>
-            
             :
             <h2>{props.galleryItem.description}</h2>
-
             } 
         </div>
         <button id={props.galleryItem.id} onClick={likeGalleryItem}>Like</button>
