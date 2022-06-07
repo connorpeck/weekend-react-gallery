@@ -35,6 +35,18 @@ const galleryItems = [
     title: 'eclipse',
     description: 'Total solar eclipse in Wyoming!', 
     likes: 0 },
+        { id: 10, path: 'images/family.jpg', 
+    title: 'family',
+    description: 'Family!', 
+    likes: 0 },
+    { id: 11, path: 'images/redwoods.jpg', 
+    title: 'tree',
+    description: 'Redwoods!', 
+    likes: 0 },
+    { id: 12, path: 'images/cave.jpg', 
+    title: 'cave',
+    description: 'Cave diving!', 
+    likes: 0 }
 ];
 
 module.exports = galleryItems;
